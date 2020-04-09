@@ -1,0 +1,29 @@
+{
+    "name": "tnmdev/api-response",
+    "description": "API Response Interface",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TNM Developers",
+            "email": "developers@tnm.co.nw"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "TNM\\ApiResponse\\": "src/",
+            "TNM\\ApiResponse\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TNM\\ApiResponse\\ResponseServiceProvider"
+            ]
+        }
+    }
+}
