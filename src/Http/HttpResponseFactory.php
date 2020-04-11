@@ -5,6 +5,7 @@ namespace TNM\ApiResponse\Http;
 use Illuminate\Http\JsonResponse;
 use TNM\ApiResponse\Exceptions\InvalidResponseCodeException;
 use TNM\ApiResponse\Service\ServiceResponseInterface;
+use TNM\ApiResponse\src\Http\Responses\BadResponse;
 use TNM\ApiResponse\src\Http\Responses\ObjectCreatedResponse;
 use TNM\ApiResponse\src\Http\Responses\ObjectNotFoundResponse;
 use TNM\ApiResponse\src\Http\Responses\PreconditionFailedResponse;
@@ -37,6 +38,9 @@ class HttpResponseFactory
                 break;
             case 422:
                 $httpResponse = new UnprocessableEntityResponse();
+                break;
+            case 400:
+                $httpResponse = new BadResponse();
                 break;
             default:
                 throw new InvalidResponseCodeException(sprintf("The given response code %s is invalid", $response->getCode()));
