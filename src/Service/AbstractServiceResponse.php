@@ -79,7 +79,7 @@ abstract class AbstractServiceResponse implements ServiceResponseInterface
 
     public function successful(): bool
     {
-        return $this->code >= 200 && $this->code < 400;
+        return $this->getCode() >= 200 && $this->getCode() < 400;
     }
 
     public function getCode(): int
