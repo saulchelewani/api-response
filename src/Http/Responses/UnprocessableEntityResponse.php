@@ -1,7 +1,7 @@
 <?php
 
 
-namespace TNM\ApiResponse\Http;
+namespace TNM\ApiResponse\Http\Responses;
 
 
 class UnprocessableEntityResponse extends HttpResponse

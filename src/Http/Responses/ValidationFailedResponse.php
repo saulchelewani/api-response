@@ -1,12 +1,11 @@
 <?php
 
 
-namespace TNM\ApiResponse\src\Http\Responses;
+namespace TNM\ApiResponse\Http\Responses;
 
 
-use Illuminate\Contracts\Validation\Validator;
-use Illuminate\Http\Response;
-use TNM\ApiResponse\Http\HttpResponse;
+
+use Illuminate\Validation\Validator;
 
 class ValidationFailedResponse extends HttpResponse
 {

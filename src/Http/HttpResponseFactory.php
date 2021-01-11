@@ -4,12 +4,14 @@ namespace TNM\ApiResponse\Http;
 
 use Illuminate\Http\JsonResponse;
 use TNM\ApiResponse\Exceptions\InvalidResponseCodeException;
+use TNM\ApiResponse\Http\Responses\OkayResponse;
+use TNM\ApiResponse\Http\Responses\UnprocessableEntityResponse;
 use TNM\ApiResponse\Service\ServiceResponseInterface;
-use TNM\ApiResponse\src\Http\Responses\BadResponse;
-use TNM\ApiResponse\src\Http\Responses\ObjectCreatedResponse;
-use TNM\ApiResponse\src\Http\Responses\ObjectNotFoundResponse;
-use TNM\ApiResponse\src\Http\Responses\PreconditionFailedResponse;
-use TNM\ApiResponse\src\Http\Responses\UnauthorizedResponse;
+use TNM\ApiResponse\Http\Responses\BadResponse;
+use TNM\ApiResponse\Http\Responses\ObjectCreatedResponse;
+use TNM\ApiResponse\Http\Responses\ObjectNotFoundResponse;
+use TNM\ApiResponse\Http\Responses\PreconditionFailedResponse;
+use TNM\ApiResponse\Http\Responses\UnauthorizedResponse;
 
 class HttpResponseFactory
 {

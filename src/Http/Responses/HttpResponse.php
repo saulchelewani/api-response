@@ -1,7 +1,7 @@
 <?php
 
 
-namespace TNM\ApiResponse\Http;
+namespace TNM\ApiResponse\Http\Responses;
 
 
 use Illuminate\Http\JsonResponse;

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace TNM\ApiResponse\src\Http\Responses;
+namespace TNM\ApiResponse\Http\Responses;
 
 
 use Illuminate\Http\Response;
