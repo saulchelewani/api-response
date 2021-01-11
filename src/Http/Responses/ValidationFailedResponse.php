@@ -5,6 +5,7 @@ namespace TNM\ApiResponse\Http\Responses;
 
 
 
+use Illuminate\Http\Response;
 use Illuminate\Validation\Validator;
 
 class ValidationFailedResponse extends HttpResponse

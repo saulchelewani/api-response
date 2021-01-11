@@ -5,6 +5,8 @@ namespace TNM\ApiResponse\Http\Responses;
 
 
 
+use Illuminate\Http\Response;
+
 class OkayResponse extends HttpResponse
 {
     public function getMessage(): string

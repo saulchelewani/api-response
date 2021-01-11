@@ -5,7 +5,6 @@ namespace TNM\ApiResponse\Http\Responses;
 
 
 use Illuminate\Http\Response;
-use TNM\ApiResponse\Http\HttpResponse;
 
 class ObjectCreatedResponse extends HttpResponse
 {
